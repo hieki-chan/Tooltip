@@ -1,4 +1,5 @@
-# Tooltip Description
+# UNITY TOOLTIP!!!
+> namespace Tools.Tooltip
 
 ## Overview
 This tooltip is a custom Unity component designed to provide informative and interactive tooltips for user interfaces. It enhances the user experience by displaying additional information when the user hovers over specific elements.
@@ -8,7 +9,7 @@ This tooltip is a custom Unity component designed to provide informative and int
 - Customizable styles, including font size, background color, and text color.
 - Supports rich text formatting, allowing for bold, italic, and different colored text within tooltips.
 - Adjustable position and alignment options for tooltips to ensure optimal visibility.
-- Easy to use
+- Easy to use.
 
 ## How to Use
 1. Attach the `Tooltip` script to the desired UI element or create a new game object and add the script as a component.
