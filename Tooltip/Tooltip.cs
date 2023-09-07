@@ -1,16 +1,32 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Events;
-using UnityEngine.EventSystems;
-using System.Collections;
 using System;
 using TMPro;
 
-namespace HiekiTools.UI.Tooltip
+namespace HiekiTools.Tooltip
 {
+    [DisallowMultipleComponent]
     public class Tooltip : MonoBehaviour
     {
         public static Tooltip Instance;
+
+        public static void Show(string text)
+        {
+            if (!Instance)
+            {
+                throw new NullReferenceException("No tooltip instance found, please create one");
+            }
+            Instance.SetTooltip(text);
+        }
+
+        public static void Hide()
+        {
+            if(!Instance)
+            {
+                throw new NullReferenceException("No tooltip instance found, please create one");
+            }
+            Instance.HideTooltip();
+        }
 
         //Text of the tooltip
         TextMeshProUGUI mText;
@@ -37,10 +53,12 @@ namespace HiekiTools.UI.Tooltip
         RenderMode mGUIMode;
         CanvasScaler mScaler;
 
+
         void Awake()
         {
             Instance = this;
             mRectTransform = transform.GetComponent<RectTransform>();
+            transform.SetAsLastSibling();
         }
 
         void Start()
