@@ -14,8 +14,8 @@ using UnityE.UI;
 3. Show/Hide Tooltip.
  ```C#
 //Show tooltip
-ToolTip.Show(yourText);               //Static call
-ToolTip.current.SetTooltip(yourText); //Singleton call
+Tooltip.Show(yourText);               //Static call
+Tooltip.current.SetTooltip(yourText); //Singleton call
 
 //Hide tooltip
 Tooltip.Hide();                       //Stattic call
