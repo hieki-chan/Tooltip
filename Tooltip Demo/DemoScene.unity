@@ -1844,8 +1844,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61514afb141e1df4eaff319c2c80ba10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_DisplayText: "Thirty years later, she still thought it was okay to put the toilet
-    paper roll under rather than over.\r (randomwordgenerator)\n"
+  m_DisplayText: 'Thirty years later, she still thought it was okay to put the toilet
+    paper roll under rather than over. (randomwordgenerator)
+
+'
   delayedCall: 0.1733
   m_TriggerType: 0
 --- !u!114 &1052365245
@@ -1893,6 +1895,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 343492194}
     m_Modifications:
+    - target: {fileID: 6359040086230584719, guid: 06218db5208271e44851e60083a38e69, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8780254449340420757, guid: 06218db5208271e44851e60083a38e69, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1916,6 +1922,11 @@ PrefabInstance:
     - target: {fileID: 8780254449340420757, guid: 06218db5208271e44851e60083a38e69, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780254449340420758, guid: 06218db5208271e44851e60083a38e69, type: 3}
+      propertyPath: m_text
+      value: Thirty years later, she still thought it was okay to put the toilet
+        paper roll under rather than over. (randomwordgenerator)
       objectReference: {fileID: 0}
     - target: {fileID: 8780254449438440753, guid: 06218db5208271e44851e60083a38e69, type: 3}
       propertyPath: m_Name
